@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="homepage.html"><img src="images/logo.png"  alt=""></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href=".">NEWS</a></li>
+          <li><a href=".">DE GAME</a></li>
+          <li><a href=".">DOWNLOAD</a></li>
+          <li><a href=".">ABOUT US</a></li>
+          <li><a href=" .">HELP</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <style>
+      
+      *{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif ;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #C86363;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+}
+nav{
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E4C041;
+  height: 16vh;
+
+  
+  
+}
+nav img{
+  width: 110px;
+  padding-left: 12px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+  
+}
+.nav-links ul li{
+  list-style: none; geen punten op de tekst;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  
+}
+.nav-links ul li a{
+  text-decoration: none;
+  color: white  ;
+  font-size: 18px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: black;
+  display: block; 
+  margin: auto;
+  transition: 0.7s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+
+button:active{
+  opacity: 0.4;
+}
+footer {
+  text-align: center;
+  padding: 45px;
+  background-color: DarkSalmon;
+  color: white;
+}
+h1{
+  margin-left: 700px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+h2{
+
+  font-family: sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  margin-left: 20px;
+
+}
+.p2{
+  margin-left: 20px;
+}
+    </style>
+    
+    <div class="text box">
+      <h1 class="`kop1">Portfolio</h1>
+      <img src="" alt="">
+      <h2>Wie ben ik?</h2>
+      <p class="p2">Ik ben Zoheb Ibrahim en ik ben 16 jaar <br>oud. Ik zit op het
+        Techniek college Rotterdam. Ik doe de <br>   opleiding ICT Software Developer 4 jaar 1
+
+      </p>
+    </div>
+
+
+  </section>
+  <footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+  
+</body>
+</html>
