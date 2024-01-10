@@ -139,14 +139,63 @@ button:active{
     <div class="text box">
       <h1 class="`kop1">Portfolio</h1>
 
+      <script>
+        function showContent(contentType) {
+    
+          var display = document.getElementById("display-area");
+    
+    
+          var photoContent = "<img src='jouw-foto-url.jpg' alt='Jouw foto'>";
+          var contactContent = "<h3>Contactinformatie</h3><p>Email: mikailezgi25@gmail.com<br>Telefoon: 0615263373</p>";
+          var pitchContent = "<h3>Videopitch</h3><iframe width='560' height='315' src='jouw-video-url' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+          var experienceContent = "<h3>Ervaring / Werkzaamheden</h3><p>...</p>";
+          var educationContent = "<h3>Opleiding</h3><p>..</p>";
+          var skillsContent = "<h3>Programmeer vaardigheden</h3><p>...</p>";
+          var hobbiesContent = "<h3>Hobby's</h3><p>...'s</p>";
+          var extraContent = "<h3>Bijzonderheden</h3><p>..</p>";
+          var traitsContent = "<h3>Karakter eigenschappen</h3><p>...</p>";
+    
+    
+          switch(contentType) {
+            case 'Foto':
+              display.innerHTML = photoContent;
+              break;
+            case 'Contact':
+              display.innerHTML = contactContent;
+              break;
+            case 'pitch':
+              display.innerHTML = pitchContent;
+              break;
+            case 'experience':
+              display.innerHTML = experienceContent;
+              break;
+            case 'education':
+              display.innerHTML = educationContent;
+              break;
+            case 'skills':
+              display.innerHTML = skillsContent;
+              break;
+            case 'hobbies':
+              display.innerHTML = hobbiesContent;
+              break;
+            case 'extra':
+              display.innerHTML = extraContent;
+              break;
+            case 'traits':
+              display.innerHTML = traitsContent;
+              break;
+            default:
+              display.innerHTML = "Selecteer een onderdeel om weer te geven";
+          }
+        }
+      </script>
 
-         <button onclick="showContent('photo')">Foto</button>
-         <button onclick="showContent('photo')">Foto</button>
-         <button onclick="showContent('photo')">Foto</button>
-         <button onclick="showContent('photo')">Foto</button>
-         <button onclick="showContent('photo')">Foto</button>
-         <button onclick="showContent('photo')">Foto</button>  
-
+         <button onclick="showContent('Foto')">Foto</button>
+         <button onclick="showContent('Contact')">Contact</button>
+         <button onclick="showContent('Pitch')">Pitch</button>
+         <button onclick="showContent('p')">Ervaring</button>
+         <button onclick="showContent('photo')">Over mezelf</button>
+         <button onclick="showContent('photo')">Hobby's</button>  
 
       <br><br><h2>Wie ben ik?</h2><br>
       <p class="p2">Ik ben Zoheb Ibrahim en ik ben 16 jaar <br>oud. Ik zit op het
