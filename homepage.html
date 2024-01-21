@@ -17,7 +17,7 @@
           <li><a href="portfoliomain.html">PORTFOLIO</a></li>
           <li><a href="goededoel.html">GOEDEDOEL</a></li>
           <li><a href="motivatie.html">MOTIVATIE DOEL</a></li>
-          <li><a href=".">GAME</a></li>
+          <li><a href="game.html">GAME</a></li>
           <li><a href="infogame.html">INFO</a></li>
         </ul>
 
@@ -25,6 +25,174 @@
     </nav>
     <style>
       
+      *{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif ;
+}
+.header{
+  min-height: 120vh;
+  width: 100%;
+  background-color: #C86363;
+  background-blend-mode: lighten;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-weight: bolder;
+  font-size: 13px;
+ 
+}
+p{
+  font-size: 12px;
+}
+nav{
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E4C041;
+  height: 16vh;
+
+  
+  
+}
+nav img{
+  width: 110px;
+  padding-left: 12px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+  
+}
+.nav-links ul li{
+  list-style: none; geen punten op de tekst;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  
+}
+.nav-links ul li a{
+  text-decoration: none;
+  color: white  ;
+  font-size: 18px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: black;
+  display: block; 
+  margin: auto;
+  transition: 0.7s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.button1{
+  width: 400px;
+  height: 450px;
+  transition: 0.5s;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  margin-left: 160px;
+  margin-top: 120px;
+  background-color: ;
+  font-weight: bolder;
+
+  
+}
+
+.button2{
+  color: white;
+  width: 400px;
+  height: 450px;
+  transition: 0.5s;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  margin-left: px;
+  margin-top: 120px;
+  background-color: darksalmon;
+  font-weight: bolder;
+  background-image: url(images/snake.png); 
+ background-size: 400px;
+}
+
+.button3{
+  color: white;
+  width: 400px;
+  height: 450px;
+  transition: 0.5s;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 120px;
+ font-weight: bolder;
+ background-image: url(images/emirhan\ spel.png); 
+ background-size: 400px;
+}
+
+
+button:hover{
+  background-color:yellow;
+  color: black;
+}
+button:active{
+  opacity: 0.4;
+}
+footer {
+  text-align: center;
+  padding: 45px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+.button3:hover{
+  background-color:#E4C041 ;
+  color: black;
+}
+
+.button2:hover{
+  background-color:#E4C041 ;
+  color: black;
+}
+
+.button1:hover{
+  background-color:#E4C041 ;
+  color: black;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.button6{
+  width: 500px;
+  height: 100px;
+  transition: 0.5s;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  margin-left: 520px;
+  margin-top: 10px;
+  background-color: #E4C041;
+  font-weight: bolder;
+  font-size: 40px;
+}
+p{
+  font-size: 20px;
+}
+h3{
+  font-size: 20px;
+}
+
 
 
   
@@ -32,24 +200,15 @@
 <div class="text box">
 
   
-       <button class="button1">NOURELDEEN</button>
+       <button class="button1"></button>
 
-       <button class="button2">ZOHEB</button>
+       <button class="button2"></button>
 
-       <button class="button3">EMIRHAN</button>
+       <button class="button3"></button>
 
-      
 
-       <button class="button4">PLAY TO DONATE!
-        <p>press to play</p>
-       </button>
-
-       <button class="button5"><a href="ZohebSnake.html">PLAY TO DONATE</a></li>
-       <p><a href="ZohebSnake.html">press to play</a></li></p>
-       </button>
-
-       <button class="button6"><a href="emirhangame.html">PLAY TO DONATE</a></li>
-        <p><a href="emirhangame.html">press to play</a></li></p>
+       <button class="button6"><a href="game.html">PLAY TO DONATE</a></li>
+        <h3><a href="game.html">PRESS TO PLAY AND CHOOSE</a></li></h3>
         </button>
 
        
@@ -57,7 +216,7 @@
 
   </section>
   <footer>
-    <p>Author: Zoheb Ibrahim</p>
+    <p1>Author: Zoheb Ibrahim</p1>
     <p><a href="mailto:hege@example.com">TechniekCollege@outlook.com</a></p>
     </footer>
 
