@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="homepage.html"><img src="images/logo.png"  alt=""></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="portfoliomain.html">PORTFOLIO</a></li>
+          <li><a href="goededoel.html">GOEDEDOEL</a></li>
+          <li><a href="motivatie.html">MOTIVATIE DOEL</a></li>
+          <li><a href="game.html">GAME</a></li>
+          <li><a href="infogame.html">INFO</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <style>
+      *{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif ;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+background-color: #C86363;
+  background-blend-mode: lighten;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-weight: bolder;
+  font-size: 13px;
+ 
+}
+h1{
+  font-size: 24px;
+}
+p{
+  font-size: 14px;
+}
+nav{
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E4C041;
+  height: 16vh;
+
+  
+  
+}
+nav img{
+  width: 110px;
+  padding-left: 12px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+  
+}
+.nav-links ul li{
+  list-style: none; geen punten op de tekst;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  
+}
+.nav-links ul li a{
+  text-decoration: none;
+  color: white  ;
+  font-size: 18px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: black;
+  display: block; 
+  margin: auto;
+  transition: 0.7s;
+}
+footer {
+  text-align: center;
+  padding: 45px;
+  background-color: DarkSalmon;
+  color: white;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+img{
+  margin-left: ;
+}
+button{
+  background-image: url(images/real\ snake.jpg);
+  background-size: 400px;
+  width: 400px;
+  height: 400px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 800px;
+  margin-top: px;
+  
+}
+
+</style>
+<div class="text box">
+  <br>
+<h1>SNAKE Zoheb Ibrahim</h1>
+<br>
+<p>Het spel wordt gespeeld op een spelbord van 3 rijen op 3 kolommen, dat initieel leeg is. <br>
+  Het spel heeft 2 spelers; X en O . De eerste speler is de speler die met X speelt. Wanneer een speler 3 op een rij heeft <br>
+  (verticaal, horizontaal, diagonaal), <br><br>is de winnaar en stopt het spel. je kan altijd nog een potje spelen.</p>
+<button>  </button>
+</section>
+<footer>
+  <p>Author: Zoheb Ibrahim</p>
+  <p><a2 href="mailto:hege@example.com">TechniekCollege@outlook.com</a2></p>
+  </footer>
